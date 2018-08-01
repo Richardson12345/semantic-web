@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="photos.css">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+</head>
+<body class="body">
+
+<div>
+     <h1 class="title" > My list of doggos!</h1>
+</div>
+
+<div id="container">
+        <img src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">
+        <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">
+        <img src="https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">
+        <img src="https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">
+        <img src="https://images.pexels.com/photos/89775/dog-hovawart-black-pet-89775.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">
+        <img src="https://images.pexels.com/photos/776078/pexels-photo-776078.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Smiley face">    
+</div>
+
+
+<div id="form">
+    <form id="addDoggo" >
+        <h2 class="title" >Add a new doggo</h2>
+        <span class="mini-title"><strong>  Image-Url:</strong></span>
+        <input type="text" id="imageUrl">
+        <input type="submit">
+    </form>
+</div>
+
+
+
+<script>
+
+        function createNewImage(url){       
+        let newImage = document.createElement("img");
+        newImage.setAttribute("src",url)
+        newImage.setAttribute("alt","Smiley Face");
+        document.getElementById("container").appendChild(newImage)
+        } 
+        
+        function insert(event){
+            let additionalImage = document.getElementById("imageUrl").value;
+            console.log(additionalImage);
+            createNewImage(additionalImage);
+            event.preventDefault()
+        }
+        document.getElementById('addDoggo').addEventListener('submit', insert) 
+    </script>
+</body>
+</html>

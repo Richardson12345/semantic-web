@@ -1,0 +1,45 @@
+img{
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    height: 350px;
+}
+.title{
+    margin: 20px auto;
+    font-size : 50px;
+    font-family: Gaegu;
+    font-weight: 5000;
+    border-bottom: 3px solid blue;
+    width: 30%;
+    padding-bottom : 10px;
+    text-align: center;
+}
+
+#container{
+    margin-top: 30px;
+    display: inline-block;
+    border: dashed 10px greenyellow
+}
+body{
+    background-image:url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+form{
+    margin : 20px auto;
+    text-align : center;
+}
+
+input{
+    background-color : yellow;
+    align : center;
+    height: 20px;
+    width: 200px;
+}
+
+.mini-title{
+    font-family: Gaegu;
+    font-weight: 5000;
+    font-size: 50px;
+    
+}
+
